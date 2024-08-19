@@ -4,14 +4,15 @@ variable "ami_id" {
 }
 
 
-variable "vpc_security_group_ids" {
+variable "security_group_ids" {
   type = list
-  default = ["sg-0fea5e49e962e81c9"]
+  default = ["sg-0f5dad527833a8939"]
 }
 
 
 variable "instance_type" {
   default = "t2.micro"
+  type = string
 }
 
 variable "tags" {
